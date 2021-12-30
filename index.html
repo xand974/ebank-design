@@ -16,8 +16,20 @@
   </head>
   <body>
     <nav id="nav">
+      <svg
+        id="10015.io"
+        class="nav__svg"
+        viewBox="0 0 480 480"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <path
+          fill="#0cae60"
+          d="M367.5,352.5Q313,465,201.5,407Q90,349,129,268.5Q168,188,226.5,145.5Q285,103,353.5,171.5Q422,240,367.5,352.5Z"
+        />
+      </svg>
       <div class="nav__left">
-        <h1>EBANK</h1>
+        <h1 class="nav__title">EBANK</h1>
         <ul class="nav__links">
           <a href="#">
             <li class="nav__link">Overview</li>
@@ -46,6 +58,9 @@
             <div class="nav__profile">
               <a href="#">
                 <img
+                  class="nav__profile--img"
+                  width="30"
+                  height="30"
                   src="https://images.unsplash.com/photo-1638460442567-cdbcfa932019?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
                   alt="the current user"
                 />
@@ -56,5 +71,65 @@
         </div>
       </div>
     </nav>
+    <main id="main">
+      <div class="left">
+        <div class="left__wrapper">
+          <h1 class="left__title">
+            Save Time <br />
+            focus on Ebank
+          </h1>
+          <p class="left__desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+            incidunt dolores quod amet.
+          </p>
+          <form id="left__form">
+            <input
+              type="text"
+              class="left__form--input"
+              placeholder="Type your E-mail"
+            />
+            <button class="left__form--btn">
+              <span>Free Trial</span>
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="right">
+        <div class="phone">
+          <div class="yellow__background"></div>
+          <div class="phone__top">
+            <span>####</span>
+            <span>01</span>
+          </div>
+          <div class="phone__mid">
+            <h2>
+              MY <br />
+              WALLET
+            </h2>
+          </div>
+          <div class="phone__bottom">
+            <div class="phone__bottom__container">
+              <div class="phone__bottom__container__top">
+                <div class="yellow"></div>
+                <p><strong>2020</strong></p>
+                <div class="check">
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+              <div class="phone__bottom__container__bottom">
+                <span>BTC</span>
+                <span>549.92</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card card--blue"></div>
+          <div class="card card--orange"></div>
+          <div class="card card--black"></div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
