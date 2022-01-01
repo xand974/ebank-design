@@ -356,6 +356,7 @@ li {
   margin-right: 10px;
   background: rgb(216, 216, 216);
   position: relative;
+  overflow: hidden;
 }
 
 .stat__circle--outline {
@@ -378,4 +379,36 @@ li {
   font-size: 0.6rem;
   color: gray;
   letter-spacing: 2px;
+}
+
+.stat__circle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  z-index: 20;
+}
+
+.stat__circle--30::after {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background: rgb(0, 0, 0);
+  top: 0;
+  right: 0;
+}
+.stat__circle--90::after {
+  content: "";
+  position: absolute;
+  height: 90px;
+  width: 30px;
+  background: rgb(0, 0, 0);
+  top: 0;
+  right: 0;
 }
